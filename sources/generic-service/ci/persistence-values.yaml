@@ -1,0 +1,12 @@
+# Persistence test
+
+image:
+  repository: jwilder/whoami
+  tag: latest
+
+rollingUpdate: false
+
+persistence:
+  enabled: true
+  size: 1M
+  mountPath: /data
